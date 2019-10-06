@@ -1,0 +1,21 @@
+<app-menu></app-menu>
+<div class="container-fluid pt-5 mt-5">
+  <div class="row">
+    <div
+      *ngFor="let people of peoples"
+      class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3"
+    >
+      <app-card
+        name="{{ people?.name }}"
+        gender="{{ people?.gender }}"
+        movies="{{ people?.films.length }}"
+      ></app-card>
+    </div>
+  </div>
+</div>
+
+<hr class="m-4"/>
+  <footer>
+    <small class = "m-4">2019 Criado por Thamires Vasconcelos</small>
+  </footer>
+
